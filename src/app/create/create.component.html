@@ -1,0 +1,25 @@
+<app-nav></app-nav>
+<app-create-head></app-create-head>
+<section id="create-section" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 order-2">
+          <img [src]="source" alt="" class="img-fluid mb-3 rounded-circle">
+        </div>
+        <div class="col-md-6 order-1">
+          <h3>Create Your Passion</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore reiciendis, voluptate at alias laborum odit aliquid
+            tempore perspiciatis repudiandae hic?</p>
+          <div class="d-flex" *ngFor ="let model of create">
+            <div class="p-4 align-self-start">
+                <fa-icon [icon]=" model.icon " class="fas fa-2x"></fa-icon>
+            </div>
+            <div class="p-4 align-self-end">
+              {{ model.address }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <app-footer></app-footer>

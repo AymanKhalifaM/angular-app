@@ -1,0 +1,32 @@
+#home-section {
+    background: url(https://firebasestorage.googleapis.com/v0/b/looplap-8d5e7.appspot.com/o/home.jpg?alt=media&token=ec206f17-06bd-4256-9294-e289369ef92a);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 900px;
+  }
+  
+  #home-section .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 900px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  #home-section .home-inner {
+    padding-top: 150px;
+  }
+  
+  #home-section .card-form {
+    opacity: 0.8;
+  }
+  
+  #home-section .fas {
+    color: #008ed6;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  

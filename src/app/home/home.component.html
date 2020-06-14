@@ -1,0 +1,33 @@
+<app-nav></app-nav>
+<header id="home-section">
+    <div class="dark-overlay">
+      <div class="home-inner container">
+        <div class="row">
+          <div class="col-lg-8 d-none d-lg-block">
+            <h1 class="display-4">Build
+              <strong>social profiles</strong> and gain revenue
+              <strong>profits</strong>
+            </h1>
+            <div class="d-flex" *ngFor="let model of homeAddAndIcon">
+              <div class="p-4 align-self-start">
+                <fa-icon [icon]=" model.icon " class="fas fa-2x"></fa-icon>
+              </div>
+              <div class="p-4 align-self-end">
+                {{ model.address }}
+              </div>
+            </div>           
+          </div>
+          <div class="col-lg-4">
+            <div class="card bg-primary text-center card-form">
+              <div class="card-body">
+                <h3>Sign Up Today</h3>
+                <p>Please fill out this form to register</p>
+               <app-form></app-form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<app-footer></app-footer>
